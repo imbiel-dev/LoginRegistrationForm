@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MyApp</h1>
+    </header>
+    <div class="container">
+        <div class="form-wrapper">
+            <!-- Login Form -->
+            <div class="form-container" id="loginFormContainer">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <div class="input-group">
+                        <label for="loginUsername">Username:</label>
+                        <div class="input-icon">
+                            <input type="text" id="loginUsername" name="loginUsername" required>
+                            <span class="icon">&#128100;</span>
+                        </div>
+                        <span class="error-message" id="loginUsernameError"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="loginPassword">Password:</label>
+                        <div class="input-icon">
+                            <input type="password" id="loginPassword" name="loginPassword" required>
+                            <span class="icon">&#128274;</span>
+                        </div>
+                        <span class="error-message" id="loginPasswordError"></span>
+                    </div>
+                    <div class="input-group remember-me">
+                        <input type="checkbox" id="rememberMe" name="rememberMe">
+                        <label for="rememberMe">Remember Me</label>
+                    </div>
+                    <button type="submit">Login</button>
+                    <span class="feedback-message" id="loginFeedback"></span>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </form>
+            </div>
+
+            <!-- Registration Form -->
+            <div class="form-container" id="registerFormContainer">
+                <h2>Register</h2>
+                <form id="registerForm">
+                    <div class="input-group">
+                        <label for="registerUsername">Username:</label>
+                        <div class="input-icon">
+                            <input type="text" id="registerUsername" name="registerUsername" required>
+                            <span class="icon">&#128100;</span>
+                        </div>
+                        <span class="error-message" id="registerUsernameError"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="registerPassword">Password:</label>
+                        <div class="input-icon">
+                            <input type="password" id="registerPassword" name="registerPassword" required>
+                            <span class="icon">&#128274;</span>
+                        </div>
+                        <small>Password must be at least 8 characters long and must not contain spaces.</small>
+                        <span class="error-message" id="registerPasswordError"></span>
+                    </div>
+                    <button type="submit">Register</button>
+                    <span class="feedback-message" id="registerFeedback"></span>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 MyApp. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
